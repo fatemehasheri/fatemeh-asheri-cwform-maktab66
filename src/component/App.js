@@ -14,8 +14,7 @@ class App extends Component {
   }
 
   handleAddContact = (contact) => {
-    console.log(contact);
-    this.setState({ contactList: [...this.state.contactList, contact] });
+    this.setState({ contactList: [...this.state.contactList, ...contact] });
   };
 
   render() {
