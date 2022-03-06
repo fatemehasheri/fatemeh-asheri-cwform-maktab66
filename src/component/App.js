@@ -9,11 +9,12 @@ class App extends Component {
     super(props);
 
     this.state = {
-      contactList: ["asghar", "akbar", "mehrnaz", "abbas"],
+      contactList: ["fatemeh"],
     };
   }
 
   handleAddContact = (contact) => {
+    console.log(contact);
     this.setState({ contactList: [...this.state.contactList, contact] });
   };
 

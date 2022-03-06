@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 
-class NameForm extends React.Component {
+class NameForm extends Component {
     constructor(props) {
       super(props);
       this.state = {};
@@ -20,7 +20,7 @@ class NameForm extends React.Component {
   
     render() {
       return (
-        <form className="form" onSubmit={this.handleSubmit}>
+        <form className="form my-5" onSubmit={(e) => this.handleSubmit(e)}>
           <label>
             Name:
             <input type="text" name="name" value={this.state.value} onChange={this.handleChange} />
@@ -37,7 +37,7 @@ class NameForm extends React.Component {
             Email:
             <input type="text" name="email" value={this.state.value} onChange={this.handleChange} />
           </label>
-          <input type="submit" value="Submit" />
+          <input className="my-5" type="submit" value="Submit" />
         </form>
       );
     }

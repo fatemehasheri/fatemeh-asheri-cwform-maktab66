@@ -4,9 +4,9 @@ class Table extends Component {
     render() {
         return (
             <div>
-                <table class="table" id="contact-list">
+                <table className="table" id="contact-list">
                     <thead>
-                        <tr class="tr">
+                        <tr className="tr">
                             <th>Name:</th>
                             <th>family:</th>
                             <th>Email:</th>
